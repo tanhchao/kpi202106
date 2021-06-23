@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.kpi202106demo.mapper.CompanyMapper">
+  <resultMap id="BaseResultMap" type="com.example.kpi202106demo.pojo.Company">
+    <!--@mbg.generated-->
+    <!--@Table ss_company-->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="expiration_date" jdbcType="TIMESTAMP" property="expirationDate" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="license_id" jdbcType="VARCHAR" property="licenseId" />
+    <result column="representative" jdbcType="VARCHAR" property="representative" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="company_size" jdbcType="VARCHAR" property="companySize" />
+    <result column="industry" jdbcType="VARCHAR" property="industry" />
+    <result column="remarks" jdbcType="VARCHAR" property="remarks" />
+    <result column="state" jdbcType="INTEGER" property="state" />
+    <result column="balance" jdbcType="DOUBLE" property="balance" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, `name`, expiration_date, address, license_id, representative, phone, company_size, 
+    industry, remarks, `state`, balance, city
+  </sql>
+</mapper>
